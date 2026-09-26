@@ -19,7 +19,7 @@ The production models use a frozen molecular representation combining **217 RDKi
 
 The easiest way to use MtbAIM is through the Google Colab notebook:
 
-`MtbAIM_predictor.ipynb`[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jasdeep002/MtbAIM/blob/main/MTB_AI_Predictor_Step31B_HuggingFace_Colab.ipynb)
+`Open Colab Notebook here`[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jasdeep002/MtbAIM/blob/main/MtbAIM_predictor.ipynb)
 
 Open the notebook in Google Colab and select:
 
