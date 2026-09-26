@@ -11,8 +11,6 @@ The current deployment provides:
 - DS MIC, MIC90, and MIC99 prediction
 - DR MIC, MIC90, and MIC99 prediction
 
-The production models use a frozen molecular representation combining **217 RDKit descriptors** with a **2048-bit Morgan fingerprint**.
-
 ---
 
 ## Run in Google Colab
@@ -35,7 +33,7 @@ No local installation or permanent server is required.
 
 Users can either:
 
-- paste SMILES directly, one molecule per line; or
+- paste SMILES directly; or
 - upload a CSV containing a SMILES column.
 
 Recognized column names include:
@@ -82,22 +80,7 @@ A downloadable CSV additionally contains pMIC values, nM concentrations, 80/90/9
 
 ---
 
-## Model framework
 
-Classification and regression models were developed separately for DS and DR datasets using **strict scaffold-aware cross-validation**.
-
-The deployed molecular representation is:
-
-```text
-217 RDKit molecular descriptors
-+
-2048-bit Morgan fingerprint
-(radius = 2, chirality enabled)
-=
-2265 features
-```
-
-The final deployed models are:
 
 | Task | Model |
 |---|---|
@@ -127,21 +110,6 @@ Prediction is stopped if these checks fail.
 
 ---
 
-## Model files
-
-The deployment bundle is hosted on Hugging Face:
-
-`jasdeep002/MtbAIM`
-
-Bundle:
-
-```text
-MTB_AI_predictor_v1.zip
-```
-
-The Colab notebook downloads the bundle automatically using the Hugging Face Hub API.
-
----
 
 ## Repository structure
 
